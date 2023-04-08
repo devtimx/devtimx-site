@@ -5,13 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/styles/main.scss">
-    <title>Document</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.11/js/all.js" integrity="sha384-ImVoB8Er8knetgQakxuBS4G3RSkyD8IZVVQCAnmRJrDwqJFYUE4YOv+DbIofcO9C" crossorigin="anonymous"></script>
+   <title>Document</title>
 </head>
 <body>
     <main>
         <nav>
-            <a href="index.html">inicio</a>
-            <a href="#">contacto</a>
+            <a href="#home" class="active">Logo</a>
+            <div id="myLinks">
+              <a href="#news">News</a>
+              <a href="#contact">Contact</a>
+              <a href="#about">About</a>
+            </div>
+            <a href="#" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
         </nav>
         <header>
             <div class="brand">
@@ -47,11 +55,25 @@
                 <a class="btn" href="#">Saber mas</a>
             </div>
         </section>
-        
     </main>
     <section></section>
     <footer>
         <p>Copyright ©️ 2023, DevTiMx</p>
     </footer>
+    <script>
+        function myFunction() {
+            var media = window.matchMedia("(min-width:992px)")
+            if (media.matches){
+                media.style.display = "flex";
+            } else {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "flex") {
+            x.style.display = "none";
+            } else {
+            x.style.display = "flex";
+            }
+            }
+        }
+        </script>
     </body>
 </html>
