@@ -11,5 +11,87 @@ body{
     padding: 0;
     font-family: 'Courier New', Courier, monospace;
     font-size: 14px;
-    background-color: var(--color-cerulean);
+    background-color: var(--color-gallery);
     }
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.services{
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    display: flex;
+    overflow: hidden;
+    background-color: var(--color-blue-zodiac);
+    width: 100%;
+}
+
+nav a{
+    text-decoration: none;
+    display: block;
+    color: var(--color-gallery);
+    font-weight: bold;
+    text-align: center;
+    padding: 14px 16px;
+    float: left;
+}
+
+nav a:hover{
+    background-color: var(--color-astronaut);
+}
+
+header{
+    background-image: url("https://img.freepik.com/foto-gratis/pantallas-computadora-que-ejecutan-codigo-programacion-oficina-agencia-desarrollo-software-vacio-computadoras-que-analizan-algoritmos-datos-segundo-plano-servidores-red-neuronal-cloud-computing-sala-datos_482257-33353.jpg?w=900&t=st=1680918168~exp=1680918768~hmac=12658b8a1b46602385aed12811945c9ede00ee55ceb2a84bc365bc76dcf038c0");
+    height: 200px;
+}
+
+.brand{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(238,238,238, 5.0);
+}
+
+.text-center{
+    text-align: center;
+}
+
+section{
+    display: flex;
+    width: 100%;
+    padding: 14px 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    background-color: var(--color-blue-zodiac);
+    color: var(--color-gallery);
+    text-decoration: none;
+    text-align: center;
+    border-radius: 10px;
+    padding: 14px 14px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.btn:hover{
+    background-color: var(--color-astronaut);
+}
+
+footer{
+    background-color: var(--color-blue-zodiac);
+    text-align: center;
+    padding: 12px;
+}
+
+footer p{
+    color: var(--color-gallery);
+    font-weight: bold;
+    font-size: 12px;
+}
