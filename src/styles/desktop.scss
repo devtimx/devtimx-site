@@ -1,15 +1,16 @@
-@media screen  and (min-width:992px) {
-    nav{
+@media screen and (min-width:992px) {
+    nav {
         display: flex;
         flex-direction: row;
         background-color: var(--color-blue-zodiac);
     }
+
     nav #myLinks {
         display: flex;
         flex-direction: row;
     }
-    
-    nav a{
+
+    nav a {
         text-decoration: none;
         color: var(--color-gallery);
         font-weight: bold;
@@ -17,18 +18,35 @@
         padding: 14px 16px;
         float: left;
     }
-    
+
     nav a.icon {
         display: none;
     }
-    
-    nav a:hover{
+
+    nav a:hover {
         background-color: var(--color-astronaut);
     }
-    
+
     .active {
         background-color: var(--color-astronaut);
         color: white;
     }
-   
+
+    .services-section {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 80px auto auto;
+        gap: 20px;
+        width: 100%;
+        padding: 14px 16px;
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
+
+    .services {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
 }
