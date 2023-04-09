@@ -1,0 +1,34 @@
+@media screen  and (min-width:992px) {
+    nav{
+        display: flex;
+        flex-direction: row;
+        background-color: var(--color-blue-zodiac);
+    }
+    nav #myLinks {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    nav a{
+        text-decoration: none;
+        color: var(--color-gallery);
+        font-weight: bold;
+        text-align: center;
+        padding: 14px 16px;
+        float: left;
+    }
+    
+    nav a.icon {
+        display: none;
+    }
+    
+    nav a:hover{
+        background-color: var(--color-astronaut);
+    }
+    
+    .active {
+        background-color: var(--color-astronaut);
+        color: white;
+    }
+   
+}
