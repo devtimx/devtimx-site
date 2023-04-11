@@ -39,14 +39,18 @@
         gap: 20px;
         width: 100%;
         padding: 14px 16px;
-        margin-top: 15%;
-        margin-bottom: 15%;
+        margin-bottom: auto;
+        align-items: baseline;
     }
 
     .services {
         display: flex;
         flex-direction: column;
         padding: 10px;
+    }
+
+    #contact {
+        margin-top: 25%;
     }
 
 }
