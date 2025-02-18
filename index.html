@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,110 +8,187 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.11/js/all.js"
         integrity="sha384-ImVoB8Er8knetgQakxuBS4G3RSkyD8IZVVQCAnmRJrDwqJFYUE4YOv+DbIofcO9C"
         crossorigin="anonymous"></script>
-    <title>DevTiMx</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <main>
-        <nav>
-            <a href="index.html" class="active">DevTiMx</a>
-            <div id="myLinks">
-                <a href="#about">Acerca de</a>
-                <a href="#contact">Contacto</a>
-            </div>
-            <a href="#" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </nav>
-        <header>
-            <div class="brand">
-                <h1 class="text-center">DevTiMx</h1>
-                <p class="text-center">Desarrollo agil y confiable</p>
-            </div>
-        </header>
-        <section>
-            <p class="text-justify">Trabaja con profesionales en desarrollo web, aplicaciones móviles, configuración de
-                servidores y consultoría. Llevemos tu empresa al siguiente nivel y haz crecer tu negocio.</p>
-            <br>
-            <span>¿COMO PODEMOS AYUDARTE?</span>
-        </section>
-        <h2 class="text-center">servicios</h2>
-        <section class="services-section">
-            <div class="services">
-                <h3>CONFIGURACIÓN DE SERVIDORES</h3>
-                <p class="text-justify">Toma el control de tu propio espacio en internet con un servidor privado,
-                    implementamos servidores enfocados a tus necesidades con todas las medidas de seguridad.
-                    Implementamos todos los servicios necesarios para habilitar su infraestructura en la nube publica,
-                    privada o híbrida, habilitamos servidores para que puedan montar sus aplicaciones o sitios web,
-                    implementamos herramientas de almacenamiento, respaldo y recuperación de datos en caso de desastres,
-                    diseñamos y ejecutamos migraciones de datos y contenido entre ambientes.</p>
-                <a class="btn" href="#">Saber mas</a>
-            </div>
-            <div class="services">
-                <h3>CONSULTORÍA</h3>
-                <p class="text-justify">¿Sabes si tus implementaciones tecnológicas cumplen con los estándares
-                    necesarios? Deseas saber como mejorar tu empresa implementando soluciones tecnológicas, o tienes
-                    implementaciones a las cuales no explotas su potencial, acercate a nosotros te guiamos paso a paso.
-                    Expertos especializados en consultoría de servicios digitales e implementación de servicios.</p>
-                <a class="btn" href="#">Saber mas</a>
-            </div>
-            <div class="services">
-                <h3>DESARROLLO MOVIL</h3>
-                <p class="text-justify">Hoy en dia las aplicaciones móviles son parte de la vida de tus clientes, ¿Tu
-                    empresa ya cuenta con una? Diseño y desarrollo de APP’S híbridas o nativas. Desarrollamos apps
-                    especializadas, contamos con amplia experiencia tanto en el desarrollo de apps nativas como
-                    multi-plataforma. Podemos ayudarle a determinar la mejor estrategia móvil, de acuerdo a las
-                    necesidades de su organización.</p>
-                <a class="btn" href="#">Saber mas</a>
-            </div>
-            <div class="services">
-                <h3>DESARROLLO WEB</h3>
-                <p class="text-justify">¿Necesitas un sitio web para tu empresa o personal? tenemos la solución! Diseño
-                    responsivo adaptable a dispositivos móviles, estándares UI/UX ¡Y más!. Desarrollamos la solución web
-                    que necesitas, con programadores expertos trabajando en el diseño y programación, integración de
-                    e-comerce y desarrollo de aplicaciones flexibles para dar solución a diferentes necesidades dentro
-                    de una organización. Proveemos soluciones para todo tipo de organización, que incluyen front-end,
-                    back-end, SEO y la infraestructura necesaria para el lanzamiento en el menor tiempo posible.</p>
-                <a class="btn" href="#">Saber mas</a>
-            </div>
-        </section>
-        
-        <section id="contact">
-            <h3 class="text-center">Formulario de contacto</h3>
-            <form action="https://formspree.io/f/myyvdwza" method="POST" > 
-            <div class="form-group">
-                <label> Email: 
-                <input type="email" name="email"> 
-                </label> 
-            </div>
-            <div class="form-group">
-                <label> Mensaje: 
-                <textarea name="message"></textarea> 
-                </label> 
-            </div>
-                        <!-- your other form fields go here --> 
-                <button class="btn" type="submit">Enviar</button>
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p>Copyright ©️ 2023, DevTiMx</p>
-    </footer>
-    <script>
-        function myFunction() {
-            var media = window.matchMedia("(min-width:992px)")
-            if (media.matches) {
-                media.style.display = "flex";
-            } else {
-                var x = document.getElementById("myLinks");
-                if (x.style.display === "flex") {
-                    x.style.display = "none";
-                } else {
-                    x.style.display = "flex";
-                }
-            }
-        }
-    </script>
-</body>
 
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="/">DevTiMx</a>
+                <p class="slogan">Desarrollo Ágil y Confiable</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#portafolio">Portafolio</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Consultoría de TI a tu medida</h1>
+                <p>Impulsamos tu negocio con soluciones tecnológicas innovadoras y personalizadas. Diseño web, Desarollo de software, Consultoría TI Estratégica y más.</p>
+                <a href="#contacto" class="cta-button">Contáctanos</a>
+            </div>
+            <div class="hero-image">
+                <img width="600" height="300" src="https://img.freepik.com/foto-gratis/pantallas-computadora-que-ejecutan-codigo-programacion-oficina-agencia-desarrollo-software-vacio-computadoras-que-analizan-algoritmos-datos-segundo-plano-servidores-red-neuronal-cloud-computing-sala-datos_482257-33353.jpg?w=900&t=st=1680918168~exp=1680918768~hmac=12658b8a1b46602385aed12811945c9ede00ee55ceb2a84bc365bc76dcf038c0" alt="Imagen representativa de consultoría TI">
+                </div>
+        </div>
+    </section>
+
+    <section id="servicios">
+        <div class="container">
+            <h2>Nuestros Servicios</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <img src="https://img.freepik.com/free-photo/coding-man_1098-18084.jpg?t=st=1739900010~exp=1739903610~hmac=d5775b3eb174b773884832bd6422d2cf562edfca7524c59c6df48f8b9bcc6a93&w=1380" alt="Desarrollo Web">
+                    <h3>Desarrollo Web </h3>
+                    <p>Creamos sitios web modernos, responsivos y optimizados para ofrecer la mejor experiencia de usuario y posicionamiento en buscadores.</p>
+                    
+                    <div class="service-details" id="detalles-web">
+                        <p>Diseñamos y desarrollamos soluciones web a medida, desde landing pages hasta plataformas avanzadas con integración de comercio electrónico y sistemas administrativos.</p>
+                        <ul>
+                            <li>Diseño responsivo y adaptable a todos los dispositivos.</li>
+                            <li>Optimización para motores de búsqueda (SEO).</li>
+                            <li>Desarrollo en tecnologías modernas como Angular, React y Vue.js.</li>
+                            <li>Implementación de sistemas de gestión de contenido (CMS).</li>
+                        </ul>
+                        <p>Nuestro enfoque se centra en la creación de sitios web **rápidos, seguros y optimizados para SEO**, garantizando una excelente experiencia de usuario en cualquier dispositivo.</p>
+                    </div>
+                    <button class="learn-more learn-more-btn" id="ver-mas-web" onclick="toggleServiceDetails('ver-mas-web')">Ver más</button>
+                </div>
+                 <div class="service-item">
+                    <img src="https://img.freepik.com/free-photo/html-css-collage-concept-with-person_23-2150062004.jpg?t=st=1739900062~exp=1739903662~hmac=1b8500d5bac08811917d07900ddf494887326214ea05bed00cc0c77df2e46500&w=1380" alt="Desarrollo de Software">
+                    <h3>Desarrollo de Software</h3>
+                    <p>Desarrollamos software personalizado para optimizar procesos y mejorar la eficiencia de tu empresa.</p>
+                    <div class="service-details" id="detalles-software">
+                        <p>Creamos soluciones escalables y seguras, adaptadas a las necesidades específicas de cada cliente:</p>
+                        <ul>
+                            <li>Aplicaciones web y móviles.</li>
+                            <li>Sistemas empresariales y ERPs.</li>
+                            <li>Integración con bases de datos y APIs.</li>
+                            <li>Uso de metodologías ágiles para entregas rápidas y eficientes.</li>
+                        </ul>
+                        <p>Desarrollamos aplicaciones web **escalables, seguras y fáciles de usar**, adaptadas a las necesidades específicas de tu organización.</p>
+                    </div>
+                    <button class="learn-more learn-more-btn" id="ver-mas-software" onclick="toggleServiceDetails('ver-mas-software')">Ver más</button>
+                </div>
+                 <div class="service-item">
+                    <img src="https://img.freepik.com/free-photo/person-working-html-computer_23-2150038840.jpg?t=st=1739900126~exp=1739903726~hmac=a2d83592e8bc3c97f7aaad72fe09ee82c01b00d4a337b7c639f1235ae04c2d9a&w=1380" alt="Consultoría TI">
+                    <h3>Consultoría TI Estratégica</h3>
+                    <p>Te ayudamos a optimizar tu infraestructura tecnológica con estrategias innovadoras y seguras.</p>
+                    <div class="service-details" id="detalles-consult">
+                        <p>Nuestro equipo de expertos en TI te guiará en la transformación digital de tu empresa:</p>
+                        <ul>
+                            <li>Evaluación de infraestructura y seguridad.</li>
+                            <li>Implementación de soluciones en la nube.</li>
+                            <li>Estrategias para optimización de costos y rendimiento.</li>
+                            <li>Asesoramiento en herramientas y plataformas tecnológicas.</li>
+                        </ul>
+                        <p>Te brindamos **orientación experta y soluciones a medida** para optimizar tu inversión en tecnología y maximizar el valor para tu negocio.</p>
+                    </div>
+                    <button class="learn-more learn-more-btn" id="ver-mas-consult" onclick="toggleServiceDetails('ver-mas-consult')">Ver más</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portafolio">
+        <div class="container">
+            <h2>Nuestro Portafolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img width="400" height="300" src="src/img/2085_min.png" alt="POS Litle">
+                    <h3>Pos lite</h3>
+                    <p>Optimiza tus ventas con nuestra versión gratuita de POS Lite, un sistema de punto de venta ágil y eficiente, diseñado para pequeños negocios que buscan una solución sin costos iniciales.</p>
+                    <div class="service-details" id="detalles-pos">
+                        <h5>¿Qué es POS Lite?</h5>
+                        <p>Es un sistema de punto de venta (POS) gratuito y fácil de usar, ideal para emprendedores, tiendas pequeñas y negocios en crecimiento. Te permite gestionar ventas, inventario y clientes de manera sencilla y sin complicaciones.</p>
+                        <h5>Beneficios Clave:</h5>
+                        <ul>
+                            <li>Registro rápido de ventas.</li>
+                            <li>Control básico de inventario para evitar faltantes.</li>
+                            <li>Interfaz intuitiva, sin necesidad de capacitación avanzada.</li>
+                            <li>Sin costos ocultos: accede a la versión gratuita solicitándola.</li>
+                        </ul>
+                        <h5>¿Quieres probarlo?</h5>
+                        <p>Solicita tu versión gratuita de POS Lite hoy mismo y lleva tu negocio al siguiente nivel. ¡Es fácil, rápido y sin compromiso!</p>
+                    </div>
+                    <button class="view-case view-case-btn" id="ver-mas-pos" onclick="toggleServiceDetails('ver-mas-pos')">Ver más</button>
+                </div>
+                <!--<div class="portfolio-item">
+                    <img src="https://img.freepik.com/free-vector/hand-drawn-flat-design-erp-illustration_23-2149365029.jpg?t=st=1739908313~exp=1739911913~hmac=8bfeb4aff99b6ac4a81189712135354ae87378965da8bfa0041f28ef4fc4d326&w=826" alt="Proyecto 2">
+                    <h3>Nombre del Proyecto 2</h3>
+                    <p>Descripción breve del proyecto.</p>
+                    <a href="#" class="view-case">Ver Caso de Estudio</a>
+                </div>-->
+            </div>
+        </div>
+    </section>
+
+    <section id="nosotros">
+        <div class="container">
+            <div class="about-content">
+                <h2>Sobre Nosotros</h2>
+                <p>Somos un equipo de profesionales apasionados por la tecnología y comprometidos con el éxito de nuestros clientes. En DevTiMx, creemos en el poder de la innovación y la colaboración para transformar ideas en soluciones digitales efectivas.</p>
+                <p>En DevTiMx, nuestra misión es transformar ideas en soluciones tecnológicas innovadoras, ofreciendo desarrollo ágil y confiable a empresas y emprendedores. Como un equipo de desarrolladores independientes, brindamos consultoría especializada y desarrollo de software a medida, garantizando eficiencia, calidad y adaptabilidad en cada proyecto.</p>
+                <p>Nos comprometemos a impulsar la transformación digital de nuestros clientes, proporcionando herramientas tecnológicas seguras y escalables que optimicen sus procesos y potencien su crecimiento en un mundo cada vez más digital. </p>
+                <!--<button class="learn-more learn-more-btn">Conoce más</button>-->
+            </div>
+            <div class="about-image">
+                <img src="https://img.freepik.com/free-photo/team-working-animation-project_23-2149269881.jpg?t=st=1739901314~exp=1739904914~hmac=a8c99ca43fa6894cb3937093fcc25099db4df829737b5f2d6108fb9d2257d13e&w=1380" alt="Equipo DevTiMx">
+                 </div>
+        </div>
+    </section>
+
+    <!--<section id="testimonios">
+        <div class="container">
+            <h2>Testimonios de Clientes</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <p>"DevTiMx superó nuestras expectativas. Su profesionalismo y dedicación hicieron que nuestro proyecto web fuera un éxito."</p>
+                    <p class="author">- Cliente 1, Empresa X</p>
+                </div>
+                <div class="testimonial">
+                    <p>"Excelente servicio y atención al detalle.  Recomendamos ampliamente DevTiMx para cualquier proyecto de desarrollo web."</p>
+                    <p class="author">- Cliente 2, Empresa Y</p>
+                </div>
+                </div>
+        </div>
+    </section>-->
+
+
+    <section id="contacto">
+        <div class="container">
+            <h2>Contáctanos</h2>
+            <p>¿Listo para llevar tu proyecto al siguiente nivel?  Escríbenos y hablemos sobre cómo podemos ayudarte.</p>
+            <form action="https://formspree.io/f/myyvdwza" method="POST" class="contact-form">
+                <input type="text" placeholder="Nombre" name="name" required>
+                <input type="email" placeholder="Email" name="email" required>
+                <textarea placeholder="Mensaje" name="message" rows="5" required></textarea>
+                <button type="submit" class="cta-button">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 DevTiMx. Todos los derechos reservados.</p>
+            <nav>
+                <ul>
+                    <li><a href="#">Aviso Legal</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Cookies</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <script src="/src/js/main.js"></script>
+</body>
 </html>

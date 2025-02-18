@@ -1,177 +1,556 @@
-html{
-    box-sizing: border-box;
-}
+/* style.css */
+$primary-color: #2c3e50;
+/* Azul oscuro, color principal para encabezados, logo, etc. */
+$secondary-color: #2980b9;
+/* Azul más claro, color secundario para botones, enlaces, etc. */
+$secondary-color-hover: #3498db;
+/* Azul más claro hover, para estados hover de botones y enlaces */
+$accent-color: #f39c12;
+/* Naranja/Amarillo, color de acento opcional para destacar elementos */
+$background-light: #ecf0f1;
+/* Gris muy claro, para fondos de secciones claras */
+$background-lighter: #f8f8f8;
+/* Gris aún más claro, para fondos muy sutiles */
+$text-color-primary: #333;
+/* Gris oscuro, para texto principal */
+$text-color-secondary: #555;
+/* Gris medio, para texto secundario o párrafos */
+$border-color: #eee;
+/* Gris muy claro, para bordes sutiles */
+$white: #ffffff;
+/* Blanco */
+$black: #000000;
 
-*{
-    box-sizing: inherit;
-}
-
-body{
+/* Negro */
+/* Estilos generales */
+body {
+    font-family: sans-serif;
     margin: 0;
-    padding: 0;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 14px;
-    background-color: var(--color-gallery);
-    }
-
-main{
-    display: flex;
-    flex-direction: column;
+    color: #333;
+    line-height: 1.6;
 }
 
-.services{
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-@media screen and (max-width:992px) {
-
-nav{
-    overflow: hidden;
-    background-color: var(--color-blue-zodiac);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
- }
-
-nav #myLinks {
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-nav a{
-    text-decoration: none;
-    display: flex;
-    color: var(--color-gallery);
-    font-weight: bold;
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
     text-align: center;
-    padding: 14px 16px;
-    float: left;
-    flex-direction: column;
+    color: #2c3e50;
+    /* Color principal - adaptable */
 }
 
-nav a.icon {
-    background: black;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
-nav a:hover{
-    background-color: var(--color-astronaut);
+p {
+    margin-bottom: 15px;
+    color: #555;
 }
 
-.active {
-    background-color: var(--color-astronaut);
+a {
+    text-decoration: none;
+    color: #2980b9;
+    /* Color secundario - adaptable */
+}
+
+a:hover {
+    color: #3498db;
+    /* Color secundario hover - adaptable */
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #2980b9;
+    /* Color secundario - adaptable */
     color: white;
-  }
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
-header{
-    background-image: url("https://img.freepik.com/foto-gratis/pantallas-computadora-que-ejecutan-codigo-programacion-oficina-agencia-desarrollo-software-vacio-computadoras-que-analizan-algoritmos-datos-segundo-plano-servidores-red-neuronal-cloud-computing-sala-datos_482257-33353.jpg?w=900&t=st=1680918168~exp=1680918768~hmac=12658b8a1b46602385aed12811945c9ede00ee55ceb2a84bc365bc76dcf038c0");
-    height: 60vh;
+.cta-button:hover {
+    background-color: #3498db;
+    /* Color secundario hover - adaptable */
+}
+
+.learn-more,
+.view-case {
+    display: inline-block;
+    margin-top: 10px;
+    color: #2980b9;
+    /* Color secundario - adaptable */
+    font-weight: bold;
+}
+
+.learn-more:hover,
+.view-case:hover {
+    color: #3498db;
+    /* Color secundario hover - adaptable */
+}
+
+.learn-more-btn {
+    border: none;
+    background: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+/* Header */
+header {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 3em;
+    font-weight: bold;
+    color: #2c3e50;
+    font-family: 'Poppins', sans-serif ;
+    /* Color principal - adaptable */
+}
+.slogan {
+    font-size: 1em;
+    font-weight: bold;
+    color: #2c3e50;
+    font-family: 'Poppins', sans-serif ;
+    margin-top: -25px;
+    margin-left: 3px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    color: #555;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #2c3e50;
+    /* Color principal - adaptable */
+}
+
+
+/* Hero Section */
+#hero {
+    padding: 80px 0;
+    background-color: #ecf0f1;
+    /* Color de fondo claro - adaptable */
+}
+
+#hero .container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
-.brand{
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(238, 238, 238, 0.289);
-    position: absolute;
-    width: 100%;
-    height: 60%;
+#hero-content {
+    flex: 1;
+    padding-right: 30px;
 }
 
-.brand h1{
-    font-size: 60px;
-    margin-bottom: 0;
-    margin-top: 10%;
+#hero-content h1 {
+    font-size: 3em;
+    color: #2c3e50;
+    /* Color principal - adaptable */
+    margin-bottom: 20px;
+    line-height: 1.2;
 }
 
-.brand p{
-    font-size: 25px;
-    font-weight: bold;
-    margin: 0;
-    padding: 0;
+#hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
 }
 
-.text-center{
+#hero-image {
+    flex: 1;
     text-align: center;
 }
 
-.text-justify{
-    text-align: justify;
+#hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
 
-section{
-    display: flex;
+
+/* Servicios Section */
+#servicios {
+    padding: 60px 0;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.service-item {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.service-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.service-item h3 {
+    font-size: 1.5em;
+    color: #2c3e50;
+    /* Color principal - adaptable */
+    margin-bottom: 15px;
+}
+
+/* Servicios Section - Detalles Expandidos */
+.service-details {
+    display: none;
+    /* Ocultar por defecto */
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    text-align: left;
+    /* Alinea el texto a la izquierda dentro de los detalles */
+}
+
+.service-details h4 {
+    font-size: 1.3em;
+    color: $primary-color;
+    /* Usa la variable de color principal */
+    margin-bottom: 10px;
+}
+
+.service-details h5 {
+    font-size: 1.1em;
+    color: $text-color-secondary;
+    /* Usa la variable de color secundario para el texto */
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+
+.service-details ul {
+    padding-left: 20px;
+    /* Añade indentación a la lista */
+    margin-bottom: 15px;
+}
+
+.service-details ul li {
+    list-style-type: disc;
+    /* Viñetas tipo disco */
+    margin-bottom: 8px;
+}
+
+/* Clase para mostrar los detalles (se togglea con JS) */
+.service-details.show-details {
+    display: block;
+    /* Mostrar cuando se añade la clase .show-details */
+}
+
+
+/* Portafolio Section */
+#portafolio {
+    padding: 60px 0;
+    background-color: #f8f8f8;
+    /* Color de fondo claro - adaptable */
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.portfolio-item {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    /* Para asegurar que la imagen respete el border-radius */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item img {
     width: 100%;
     height: auto;
-    padding: 14px 16px;
+    display: block;
+    max-width: 400px;
+    justify-self: center;
+    /* Elimina espacio extra debajo de la imagen */
+}
+
+.portfolio-item h3,
+.portfolio-item p {
+    padding: 15px 20px;
+    text-align: left;
+    margin: 0;
+    /* Elimina márgenes internos para un control más preciso */
+}
+
+.portfolio-item h3 {
+    font-size: 1.3em;
+    color: #2c3e50;
+    /* Color principal - adaptable */
+    margin-bottom: 5px;
+}
+
+.portfolio-item p {
+    margin-bottom: 10px;
+}
+
+.portfolio-item .view-case {
+    display: block;
+    padding: 15px 20px;
+    background-color: #ecf0f1;
+    /* Color de fondo muy claro - adaptable */
+    text-align: left;
+    border-top: 1px solid #eee;
+}
+
+.portfolio-item .service-details {
+    padding: 20px;
+}
+
+.view-case-btn {
+    border: none;
+    width: 100%;
+    font-size: 16px;
+}
+
+
+/* Nosotros Section */
+#nosotros {
+    padding: 60px 0;
+}
+
+#nosotros .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-content {
+    flex: 1;
+    padding-right: 30px;
+}
+
+.about-content h2 {
+    text-align: left;
+    /* Alinea el título a la izquierda en esta sección */
+}
+
+
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+/* Testimonios Section */
+#testimonios {
+    padding: 60px 0;
+    background-color: #ecf0f1;
+    /* Color de fondo claro - adaptable */
+}
+
+.testimonial-slider {
+    margin-top: 30px;
+    /* Aquí se podría agregar estilos específicos para un slider con JS */
+}
+
+.testimonial {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    /* Espacio entre testimonios si no es slider */
+}
+
+.testimonial p.author {
+    font-style: italic;
+    text-align: right;
+    color: #777;
+    margin-top: 15px;
+}
+
+
+/* Contacto Section */
+#contacto {
+    padding: 60px 0;
+    background-color: #f8f8f8;
+    /* Color de fondo claro - adaptable */
+}
+
+.contact-form {
+    margin-top: 30px;
+    display: flex;
     flex-direction: column;
-    justify-content: center;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    /* Permite redimensionar verticalmente */
+}
+
+.contact-form button.cta-button {
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    /* Color principal - adaptable */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
-.btn{
-    background-color: var(--color-blue-zodiac);
-    color: var(--color-gallery);
-    text-decoration: none;
-    text-align: center;
-    border-radius: 10px;
-    padding: 14px 14px;
-    font-size: 14px;
-    font-weight: bold;
-    width: 35%;
+footer nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
 }
 
-.btn:hover{
-    background-color: var(--color-astronaut);
+footer nav ul li {
+    margin-left: 20px;
 }
 
-.form-group {
-    margin: 20px 0;
-}
-   
-  .form-group label,
-  input:not([type="radio"], [type="checkbox"]) {
-    width: 100%;
-}
-  
-  .form-group input,
-  .form-group label {
-    vertical-align: middle;
-}
-  
-  .form-group textarea {
-    display: block;
-    width: 100%;
-    resize: vertical;
-  }
-  
-  .form-group input[type="text"],
-  .form-group input[type="email"],
-  .form-group textarea {
-    background: var(--color-gallery);
-    border: 1px solid var(--color-bright-gray);
-    border-radius: 4px;
-    padding: 8px 10px;
-    color: var(--color-cerulean);
-  }
-
-footer{
-    background-color: var(--color-blue-zodiac);
-    text-align: center;
-    padding: 12px;
+footer nav ul li a {
+    color: white;
+    transition: color 0.3s ease;
 }
 
-footer p{
-    color: var(--color-gallery);
-    font-weight: bold;
-    font-size: 12px;
+footer nav ul li a:hover {
+    color: #ecf0f1;
+    /* Color de fondo claro - adaptable */
+}
+
+
+/* Media Queries para Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    header .container,
+    #hero .container,
+    #nosotros .container,
+    footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header .logo,
+    nav ul {
+        margin-bottom: 15px;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-right: 15px;
+    }
+
+    #hero .container {
+        text-align: center;
+        /* Centrar texto en móviles */
+    }
+
+    #hero-content {
+        padding-right: 0;
+        margin-bottom: 30px;
+        /* Espacio antes de la imagen en móviles */
+    }
+
+    #hero-content h1 {
+        font-size: 2.5em;
+    }
+
+    .services-grid,
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        /* Una columna en móviles */
+    }
+
+    #nosotros .container {
+        flex-direction: column-reverse;
+        /* Imagen arriba en móviles */
+    }
+
+    .about-content {
+        padding-right: 0;
+        margin-top: 30px;
+        /* Espacio después de la imagen en móviles */
+        text-align: center;
+        /* Centrar texto en móviles */
+    }
+
+    footer .container {
+        flex-direction: column;
+    }
+
+    footer nav ul {
+        margin-top: 15px;
+        justify-content: center;
+        /* Centrar menú en footer móvil */
+    }
 }
