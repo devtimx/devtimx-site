@@ -47,7 +47,7 @@
             <h2>Nuestros Servicios</h2>
             <div class="services-grid">
                 <div class="service-item">
-                    <img src="https://img.freepik.com/free-photo/coding-man_1098-18084.jpg?t=st=1739900010~exp=1739903610~hmac=d5775b3eb174b773884832bd6422d2cf562edfca7524c59c6df48f8b9bcc6a93&w=1380" alt="Desarrollo Web">
+                    <img src="/src/img/18084.jpg" alt="Desarrollo Web">
                     <h3>Desarrollo Web </h3>
                     <p>Creamos sitios web modernos, responsivos y optimizados para ofrecer la mejor experiencia de usuario y posicionamiento en buscadores.</p>
                     
@@ -64,7 +64,7 @@
                     <button class="learn-more learn-more-btn" id="ver-mas-web" onclick="toggleServiceDetails('ver-mas-web')">Ver más</button>
                 </div>
                  <div class="service-item">
-                    <img src="https://img.freepik.com/free-photo/html-css-collage-concept-with-person_23-2150062004.jpg?t=st=1739900062~exp=1739903662~hmac=1b8500d5bac08811917d07900ddf494887326214ea05bed00cc0c77df2e46500&w=1380" alt="Desarrollo de Software">
+                    <img src="/src/img/2150062004.jpg" alt="Desarrollo de Software">
                     <h3>Desarrollo de Software</h3>
                     <p>Desarrollamos software personalizado para optimizar procesos y mejorar la eficiencia de tu empresa.</p>
                     <div class="service-details" id="detalles-software">
@@ -80,7 +80,7 @@
                     <button class="learn-more learn-more-btn" id="ver-mas-software" onclick="toggleServiceDetails('ver-mas-software')">Ver más</button>
                 </div>
                  <div class="service-item">
-                    <img src="https://img.freepik.com/free-photo/person-working-html-computer_23-2150038840.jpg?t=st=1739900126~exp=1739903726~hmac=a2d83592e8bc3c97f7aaad72fe09ee82c01b00d4a337b7c639f1235ae04c2d9a&w=1380" alt="Consultoría TI">
+                    <img src="/src/img/2150038840.jpg" alt="Consultoría TI">
                     <h3>Consultoría TI Estratégica</h3>
                     <p>Te ayudamos a optimizar tu infraestructura tecnológica con estrategias innovadoras y seguras.</p>
                     <div class="service-details" id="detalles-consult">
@@ -142,7 +142,7 @@
                 <!--<button class="learn-more learn-more-btn">Conoce más</button>-->
             </div>
             <div class="about-image">
-                <img src="https://img.freepik.com/free-photo/team-working-animation-project_23-2149269881.jpg?t=st=1739901314~exp=1739904914~hmac=a8c99ca43fa6894cb3937093fcc25099db4df829737b5f2d6108fb9d2257d13e&w=1380" alt="Equipo DevTiMx">
+                <img src="/src/img/2149269881.jpg" alt="Equipo DevTiMx">
                  </div>
         </div>
     </section>
@@ -189,21 +189,6 @@
             </nav>
         </div>
     </footer>
-    <script>
-        function toggleServiceDetails(buttonId) {
-            console.log('inicia la funcion')
-            const serviceDetailsId = 'detalles-' + buttonId.substring(8); // Elimina 'ver-mas-' del id del botón
-            const detailsDiv = document.getElementById(serviceDetailsId);
-            const button = document.getElementById(buttonId);
-          
-            if (detailsDiv.classList.contains('show-details')) {
-                detailsDiv.classList.remove('show-details');
-                button.textContent = 'Ver más'; // Cambia el texto del botón a "Ver más"
-            } else {
-                detailsDiv.classList.add('show-details');
-                button.textContent = 'Ver menos'; // Cambia el texto del botón a "Ver menos"
-            }
-          }
-    </script>
+    <script src="/src/js/main.js"></script>
 </body>
 </html>
